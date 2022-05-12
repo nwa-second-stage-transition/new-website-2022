@@ -1,4 +1,4 @@
 Sitemap: https://nwasecondstagetransition.org/sitemap.xml
 
 User-agent: *
-Disallow:
+Disallow: /new-website-2022/*
