@@ -22,6 +22,9 @@ module.exports = function (eleventyConfig) {
       dir: {
         input: "src",
         output: "docs",
+        // ⚠️ These values are both relative to your input directory.
+        includes: "_includes",
+        layouts: "_layouts"
       },
     };
   };
