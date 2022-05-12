@@ -2,6 +2,7 @@ const { DateTime } = require("luxon");
 
 
 module.exports = function (eleventyConfig) {
+
     eleventyConfig.addWatchTarget("./src/css/");
     eleventyConfig.addPassthroughCopy("./src/assets/");
     eleventyConfig.addPassthroughCopy("./src/robot.txt");
@@ -19,6 +20,8 @@ module.exports = function (eleventyConfig) {
       return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
     });
     return {
+      "dataTemplateEngine": "njk",
+      "markdownTemplateEngine": "njk",
       dir: {
         input: "src",
         output: "docs",
