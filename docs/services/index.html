@@ -9870,6 +9870,11 @@ body {
   height: 32rem;
 }
 
+/* Centers carousel */
+.carousel-inner img {
+  margin: auto;
+}
+
 /* Customize the Google map 
 -------------------------------------------------- */
 .map-iframe {
@@ -10043,6 +10048,9 @@ body {
   
   <!-- Main Content -->
   <main class="container pt-5"><!-- START of the Services section  -->
+<div class="container">
+  <!-- Three columns of text -->
+  <div id="focus-areas1" class="row">
 <div id="listOfServices" class="position-relative overflow-hidden p-3 p-md-3 m-md-3 text-center">
   <div class="col-md-11 mx-auto my-3 ">
     <h1 class="pb-3">Our Services</h1>
@@ -10052,6 +10060,8 @@ body {
   <div class="product-device shadow-sm d-none d-md-block"></div>
   <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
 </div>
+</div>
+</div>
 <!-- END Services section-->
   <hr class="featurette-divider">
 <!-- Areas of Interest Section -->
@@ -10060,8 +10070,8 @@ body {
   <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
 </div>
 <div class="container">
-  <!-- Three columns of text below the carousel -->
-  <div id="focus-areas1" class="row">
+  <!-- Three columns of text -->
+  <div id="focus-areas1" class="row d-flex text-center">
     <div class="col-lg-4">
       <h2>Anger Management</h2>
     </div><!-- /.col-lg-4 -->
@@ -10072,13 +10082,8 @@ body {
       <h2>Life Skills</h2>
     </div><!-- /.col-lg-4 -->
   </div><!-- /.row -->
-  <!-- END Team Section -->
-  <!-- Board Members Section
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-  <div class="container">
-    <!-- Three columns of text below the carousel -->
-    <div id="focus-areas2" class="row">
+ <!-- ================================================== -->
+    <div class="row d-flex text-center">
       <div class="col-lg-4">
         <h2>Substance Abuse</h2>
       </div><!-- /.col-lg-4 -->
@@ -10090,8 +10095,10 @@ body {
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
     <!-- END Focus areas -->
+  <!-- END Focus areas section-->
   </div><!-- /.container -->
-  <!-- Accordion - starts -->
+  <hr class="featurette-divider">
+    <!-- Accordion - starts -->
   <div class="accordion accordion-flush col-sm-12 col-md-12 p-3 m-3" id="accordionFlushExample">
     <!-- accordion item assessment start -->
     <div class="accordion-item">
@@ -10217,7 +10224,10 @@ body {
     </div>
     <!-- Accordion - ends -->
     <!-- carousel start -->
-    <div class="col-sm-12 col-md-12 col-lg-12 p-3 m-3 d-flex justify-content-center">
+    <div class="container">
+  <!-- Three columns of text below the carousel -->
+  <div id="services-carousel" class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 p-3 m-3 w-75">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -10242,6 +10252,8 @@ body {
             <!-- carousel end -->
           </div>
         </div>
+  </div>
+</div>
 </main>
   <!-- END Main Content -->
   <!-- Footer -->
