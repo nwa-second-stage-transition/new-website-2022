@@ -17,6 +17,11 @@ body > footer {
   width: 10rem;
 }
 
+.candid {
+  width: 8rem; 
+  height: auto;
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
