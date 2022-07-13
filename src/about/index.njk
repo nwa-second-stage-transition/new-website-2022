@@ -4,22 +4,20 @@ layout: base-layout.njk
 templateEngineOverride: njk,md
 ---
 <!-- START of the ABOUT section  -->
-<div id="ourStory" class="position-relative overflow-hidden p-3 p-md-3 m-md-3 text-center">
+<div id="ourStory" class="p-3 text-center">
   <div class="col-md-11 mx-auto my-3 ">
     <h1 class="display-4 pb-3 fw-normal">Our Story</h1>
-    <p class="lead fw-normal">NWA Second Stage Transition is a tax-exempt nonprofit organization with a 501
-      (c) (3) status. This organization helps encourage transformation to individuals who are willing to
+    <p class="lead">NWA Second Stage Transition is a tax-exempt nonprofit organization with a 501(c)(3) 
+      status. This organization helps encourage transformation to individuals who are willing to
       break the bondage of abuse to find hope and take control of their lives. NWA Second Stage Transition
       seeks to strengthen linkages between clients and community-based resources to prevent the progression
       of abuse, addiction, and homelessness. NWA Second Stage Transition believes each person is created to
       be unique and valuable.</p>
   </div>
-  <div class="product-device shadow-sm d-none d-md-block"></div>
-  <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
 </div>
 <!-- END ABOUT section -->
 <!-- START MISSION/VISION/VALUES CAROUSEL -->
-<div class="carousel carousel-dark slide " data-bs-interval="8000" data-bs-ride="carousel" data-bs-keyboard="true">
+<div id="aboutCarousel" class="carousel carousel-dark slide " data-bs-interval="8000" data-bs-ride="carousel" data-bs-keyboard="true">
   <!--   add class carousel-fade for fade affect -->
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -32,7 +30,7 @@ templateEngineOverride: njk,md
         <div class="carousel-caption align-items-center h-75">
           <h1>Mission</h1>
           <p>To educate, empower, provide safety, and opportunities to individuals and families who want to restore a
-            balanced life and prevent the circle of addiction, homelessness, and domestic violence. </p>
+            balanced life and prevent the cycle of addiction, homelessness, and domestic violence. </p>
         </div>
       </div>
     </div>
@@ -40,8 +38,7 @@ templateEngineOverride: njk,md
       <div class="container">
         <div class="carousel-caption align-items-center h-75">
           <h1>Vision</h1>
-          <p>A community where individuals and families are empowered, transformed, given hope, and held accountably.
-          </p>
+          <p>A community where individuals and families are empowered, transformed, given hope, and held accountably.</p>
         </div>
       </div>
     </div>
@@ -66,50 +63,39 @@ templateEngineOverride: njk,md
 <!-- END ABOUT CAROUSEL -->
 <hr id="team" class="featurette-divider">
 <!-- START of the OUR TEAM Section -->
-<div class="position-relative overflow-hidden p-3 p-md-3 m-md-3 text-center">
+<div class="p-3 text-center">
   <div class="col-md-11 mx-auto my-3 ">
     <h1 class="display-4 pb-3 fw-normal">Our Team</h1>
   </div>
-  <div class="product-device shadow-sm d-none d-md-block"></div>
-  <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    <div class="col-md-11 mx-auto my-3 ">
+    <p class="lead">Our professional staff are here to help you understand how to deal with difficult situations. On staff we have a variety of licenses. Like LPC, LADC, AADC, CPI, CDEA, CIRW, CTIC, etc.</p>
+  </div>
 </div>
 <div class="container sectionMod">
-  <!-- Three columns of text below the carousel -->
-  <div class="row pb-3">
-    <div class="col-lg-4 justify-content-center d-flex flex-column text-center">
+  <div class="row pb-3 justify-content-evenly">
+    <div class="col-lg-2">
       <h2 class="">Cecelia</h2>
-      <p>Founder / Executive Direction, </br>CMHC, CPI, CDA, CIRW, CTIC</p>
     </div>
-    <div class="col-lg-4 text-center">
+    <div class="col-lg-2 text-center">
       <h2 class="">Kormah</h2>
-      <p>President / Substance Abuse Addiction Therapist, </br>LPC,LADC, AADC</p>
     </div><!-- /.col-lg-x -->
-    <div class="col-lg-4 text-center">
+    <div class="col-lg-2 text-center">
         <h2 class="">Dwight</h2>
-        <p>Board Member / Clients' Physician, LPC</p>
+    </div><!-- /.col-lg-x -->
+    <div class="col-lg-2 text-center">
+      <h2 class="">Samuel</h2>
+    </div><!-- /.col-lg-x -->
+    <div class="col-lg-2 text-center">
+      <h2 class="">Phil</h2>
     </div><!-- /.col-lg-x -->
   </div><!-- /.row -->
-  <div class="container sectionMod pb-3 pt-3">
-    <div id="" class="row">
-      <div class="col-lg-6 text-center">
-        <h2 class="">Samuel</h2>
-        <p>Board Member / Advisor</p>
-      </div><!-- /.col-lg-x -->
-      <div class="col-lg-6 text-center">
-        <h2 class="">Phil</h2>
-        <p>Board Member / Communication</p>
-      </div><!-- /.col-lg-x -->
-    </div><!-- /.row -->
-  </div>
 </div><!-- End of the OUR TEAM section -->
 <hr id="partners" class="featurette-divider">
 <!-- START of the CONTACT INFORMATION Section -->
-<div class="position-relative overflow-hidden p-3 p-md-3 m-md-3 text-center">
-  <div class="col-md-11 mx-auto my-3 ">
+<div class="p-3 text-center">
+  <div class="col-md-11 mx-auto my-3">
     <h1 class="display-4 pb-3 fw-normal">Partners</h1>
   </div>
-  <div class="product-device shadow-sm d-none d-md-block"></div>
-  <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
 </div>
 <div class="container sectionMod">
   <div class="row">
@@ -124,54 +110,31 @@ templateEngineOverride: njk,md
 </div><!-- End of the CONTACT INFORMATION section -->
 <hr id="about-contact" class="featurette-divider">
 <!-- START of the CONTACT INFORMATION Section -->
-<div class="position-relative overflow-hidden p-3 p-md-3 m-md-3 text-center">
-  <div class="col-md-11 mx-auto my-3 ">
-    <h1 class="display-4 pb-3 fw-normal">Awards</h1>
-  </div>
-  <div class="product-device shadow-sm d-none d-md-block"></div>
-  <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-</div>
-<div class="container sectionMod">
-  <div class="row">
-      <div class="col-lg-6 justify-content-center d-flex flex-row mx-auto">
-        <a href="#"><img class="awards img-fluid" src="#" alt="Candid"></a>
-      </div>
-      <div class="col-lg-6 justify-content-center d-flex flex-row mx-auto">
-        <a href="#"><img class="awards img-fluid" src="#" alt="Some Award"></a>
-      </div>
-    </div>
-  </div><!-- /.row -->
-</div><!-- End of the CONTACT INFORMATION section -->
-<hr id="about-contact" class="featurette-divider">
-<!-- START of the CONTACT INFORMATION Section -->
-<div class="position-relative overflow-hidden p-3 p-md-3 m-md-3 text-center">
+<div class="p-3 text-center align-content-evenly">
   <div class="col-md-11 mx-auto my-3 ">
     <h1 class="display-4 pb-3 fw-normal">Contact</h1>
   </div>
-  <div class="product-device shadow-sm d-none d-md-block"></div>
-  <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
 </div>
 <div class="container sectionMod">
   <!-- Three columns of text below the carousel -->
-  <div class="row">
-      <address class="col-lg-4 justify-content-center d-flex flex-column text-center">
+  <div class="row p-3 text-center">
+      <address class="col-lg-4">
         <h3>Location</h3>
         <span class="py-2">
         608 South Hico Street<br>
         Siloam Springs, AR 72761<br>
         </span>
       </address>
-      <address class="col-lg-4 justify-content-center d-flex flex-column text-center text-center">
-        <h3  class="">Phone</h3>
+      <address class="col-lg-4">
+        <h3>Phone</h3>
         <span class="py-2">
           <a class="nav-link" href="tel:14795493737">(479) 549-3737</a><br>
         </span> 
       </address>
-      <div class="col-lg-4 justify-content-center d-flex flex-column text-center text-center">
-        <h3  class="">Hours</h3>
+      <div class="col-lg-4">
+        <h3>Hours</h3>
         <span class="py-2">
           Open by appointment<br>
-          Monday - Friday<br>
         </span>
       </div>
     </div>
