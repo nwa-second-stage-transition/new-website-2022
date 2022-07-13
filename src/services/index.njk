@@ -109,7 +109,7 @@ templateEngineOverride: njk,md
       <div aria-labelledby="flushthree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
         id="flush-collapseThree">
         <div class="accordion-body">
-          <h3>Anger Management Class<span style="white-space: pre;"><a href="{{site.url + 'sign-up/anger-management-class/#'}}"> > Sign-up</a></span></h3>
+          <h3>Anger Management Class > <span style="white-space: pre;"><a href="{{site.url + 'sign-up/anger-management-class/#'}}">Sign-up</a></span></h3>
           <p class="lead text-left">Individuals needing to attend anger management classes are encouraged to take the
             assessment first. Anger management Class can be ordered by a judge, parole officer, probation officer,
             employer, family member, attorney, etc.</p>
@@ -121,14 +121,14 @@ templateEngineOverride: njk,md
             <li class="lead text-left">Obtain positive support from others</li>
           </ol>
           <p class="lead text-left">Anger Management Classes: 4 to 32 hours – based on the evaluation.</p>
-          <h3>Parenting Class<span style="white-space: pre;"><a href="{{site.url + 'sign-up/parenting-class/#'}}"> > Sign-up</a></span></h3>
+          <h3>Parenting Class > <span style="white-space: pre;"><a href="{{site.url + 'sign-up/parenting-class/#'}}">Sign-up</a></span></h3>
           <p class="lead text-left">Classes are designed to help parents obtain skills needed to raise physically,
             psychologically, and emotionally healthy children. Classes help increase understanding about child
             development
             and work with parents to help their children learn, grow, and develop to meet their full potential.</p>
           <p class="lead text-left">In Person/Virtual Classes available. - 8,12, 16 or 32-hours options</p>
           <p class="lead text-left"><strong>Current Schedule: Monday or Friday - 2:00 pm or 6:00 pm</strong></p>
-          <h3>Support Group<span style="white-space: pre;"> <a href="{{site.url + 'sign-up/support-group/#'}}"> > Sign-up</a></span></h3>
+          <h3>Support Group > <span style="white-space: pre;"> <a href="{{site.url + 'sign-up/support-group/#'}}">Sign-up</a></span></h3>
           <p class="lead text-left">Creates a place where individuals and families are supported and encouraged to discover how to cope   with the burden they are carrying and how they can progress with healthy treatment. For example: they will learn how to focus on sharing their experiences to help them face and work through personal problems, build and maintain healthy relationships. With Support group, individuals or families will meet other people who are coping and want to share their stories in a safe setting. The Date/Time may vary.</p>
           <p class="lead text-left">In Person/Virtual Classes available. - 8,12, 16 or 32-hours options</p>
         </div>
@@ -168,36 +168,54 @@ templateEngineOverride: njk,md
         </div>
       </div>
     </div>
+  </div>
     <!-- Accordion - ends -->
     <!-- carousel start -->
-    <div class="container">
-  <!-- Three columns of text below the carousel -->
-  <div id="services-carousel" class="row">
-    <div class="col-sm-12 col-md-12 col-lg-12 p-3 m-3 w-75">
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img alt="Support Group" class="d-block w-55" src="{{site.url + 'assets/services-discusion-612w.jpg'}}">
-      </div>
-            <div class="carousel-item">
-              <img alt="Office" class="d-block w-55" src="{{site.url + 'assets/services-office-w525.jpg'}}">
-      </div>
-              <div class="carousel-item">
-                <img alt="Self help books" class="d-block w-55" src="{{site.url + 'assets/services-books-720w.jpg'}}">
-      </div>
-              </div>
-              <button class="carousel-control-prev w-20" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-              <button class="carousel-control-next w-20" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+  <div  class="col-md-12">      
+          <div id="servicesCarousel" class="carousel carousel-light slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <!-- carousel end -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <!-- img -->
+                <img alt="Support Group" class="d-block w-55" src="{{site.url + 'assets/services-discusion-612w.jpg'}}">
+                <div class="container">
+                  <div class="carousel-caption text-start">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <!-- img -->
+                <img alt="Office" class="d-block w-55" src="{{site.url + 'assets/services-office-w525.jpg'}}">
+                <div class="container">
+                  <div class="carousel-caption">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <!-- img -->
+                <img alt="Self help books" class="d-block w-55" src="{{site.url + 'assets/services-books-720w.jpg'}}">
+                <div class="container">
+                  <div class="carousel-caption text-end">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+        </div>
+    <!-- carousel end -->
           </div>
         </div>
   </div>
 </div>
-        
