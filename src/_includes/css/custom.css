@@ -1,5 +1,13 @@
 html, body { height: 100%;}
 
+.bgc {
+  background-color: #00aacc;
+}
+
+#phone-color {
+  color: #EEE;
+}
+
 body > footer {
   position: sticky;
   top: 100vh;
@@ -22,8 +30,8 @@ body > footer {
   height: auto;
 }
 
-.npia-img {
-  width: 4rem;
+.npia {
+  width: 8rem;
   height: auto;
 }
 
