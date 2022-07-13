@@ -22,6 +22,11 @@ body > footer {
   height: auto;
 }
 
+.npia-img {
+  width: 4rem;
+  height: auto;
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
