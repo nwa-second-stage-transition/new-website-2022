@@ -161,10 +161,10 @@ footer {
   box-sizing: border-box;
 }
 .myborder {
-  border: 5px solid #bbd6dd !important;
+  border: 5px solid #646464 !important;
   padding: 3px;
-  background-color:#0d8ac4;
-  color: #eee; 
+  background-color:#eee;
+  color: #222; 
 }
 
 .myborder2 {
@@ -172,24 +172,24 @@ footer {
   padding: .25rem;
 }
 
-.quick-link, .phone-link, .email-link, .social-link {
+.quick-link, .phone-link, .email-link {
   font-weight: 400;
   color: #eee;
   text-decoration: underline;
 }
-.quick-link:hover, .phone-link:hover, .email-link:hover, .social-link:hover {
+.quick-link:hover, .phone-link:hover, .email-link:hover {
   background-color: #ffc439;
   color: #333;
   padding: 5px 10px;
   text-decoration: none;
 }
 
-.certificate-link:hover {
+.certificate-link:hover, .social-link:hover {
   padding: 10px;
   background-color: #ffc439;
 }
 
-.certificate-link {
+.certificate-link, .social-link {
   width: 8rem;
   padding: 1rem;
 }
