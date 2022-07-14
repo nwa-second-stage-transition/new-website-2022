@@ -6,22 +6,29 @@
             <hr class="d-md-none text-white-50">
             <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
               <li class="nav-item col-6 col-md-auto">
-                <a class="nav-link p-2 active" href="/">Home</a>
+                <a class="nav-link p-2 {{ 'active' if '/index' in page.url }}" href="{{site.url}}">Home</a>
               </li>
               <li class="nav-item col-6 col-md-auto">
-                <a class="nav-link p-2" href="/about">About</a>
+                <a class="nav-link p-2 {{ 'active' if '/about' in page.url }}" href="{{site.url + 'about/'}}">About</a>
               </li>
               <li class="nav-item col-6 col-md-auto">
-                <a class="nav-link p-2" href="/services">Services</a>
+                <a class="nav-link p-2 {{ 'active' if '/services' in page.url }}" href="{{site.url + 'services/'}}">Services</a>
               </li>
               <li class="nav-item col-6 col-md-auto">
-                <a class="nav-link p-2" href="/events">Events</a>
+                <a class="nav-link p-2 {{ 'active' if '/outreach' in page.url }}" href="{{site.url + 'outreach/'}}">Outreach</a>
               </li>
               <li class="nav-item col-6 col-md-auto">
-                <a class="nav-link p-2" href="/donate">Donate</a>
+                <a class="nav-link p-2 {{ 'active' if '/get-involved' in page.url }}" href="{{site.url + 'get-involved/'}}">Get Involved</a>
               </li>
               <li class="nav-item col-6 col-md-auto">
-                <a class="nav-link p-2" href="/connect">Connect</a>
+                <a class="nav-link p-2 {{ 'active' if '/contact' in page.url }}" href="{{site.url + 'contact/'}}">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle p-2 {{ 'active' if '/sign-up/' in page.url }}"" href="#" role="button" data-bs-toggle="dropdown">Sign-Up</a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="{{site.url + 'sign-up/assessment/#'}}">Assessment</a></li>
+                  <li><a class="dropdown-item" href="{{site.url + 'sign-up/class-group/#'}}">Class / Group</a></li>
+                </ul>
               </li>
             </ul>
           </div>
