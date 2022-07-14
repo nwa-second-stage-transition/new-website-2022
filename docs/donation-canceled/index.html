@@ -8,6 +8,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Donation to NWASST Canceled</title>
 
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+<title>Donation to NWASST Canceled</title>
+<meta content="NWASST is a non-profit organization in Siloam Springs Arkansas." name="description">
+<link href="https://nwasecondstagetransition.org/new-website-2022/ + '/assets/nwasst-logo.png'" rel="shortcut icon" type="image/png">
+<link href="https://nwasecondstagetransition.org/new-website-2022/ + '/sitemap.xml'" rel="sitemap" title="Sitemap" type="application/xml">
   <!-- END Head -->
   <style>
     /** bootstrap 5.1.3 **/
@@ -9822,214 +9829,279 @@ fieldset:disabled .btn {
 
     /** END bootstrap 5.1.3 **/
     /** Custom CSS **/
-    html, body { height: 100%;}
-
-.bgc {
-  background-color: #00aacc;
+    /** below the fold footer **/
+html { 
+  overflow: auto 
 }
 
-#phone-color {
-  color: #EEE;
+html, body {
+  display: table;
+  height: 100%;
+  width: 100%;
 }
 
-body > footer {
-  position: sticky;
-  top: 100vh;
+#force-below-the-fold {
+  display: table;
+  height: 100%;
+  width: 100%;
 }
 
-.navbar-brand img {
-  width: 6rem;
+/************************* carousel ***********************************/
+
+var carousel-office=document.querySelector('#carousel-office') var carousel=new bootstrap.Carousel(carousel-office)
+/************************* backgrounds ***********************************/
+
+.default {
+  background-color: #eee;
+}
+.landing {
+  background-image: url("https://nwasecondstagetransition.org/new-website-2022/assets/trees-along-path.jpg");
+  max-height: 100vh;
+  min-height: 100vh;
+  /* Full height */
+  width: 100%;
+  background-position: center;
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.partners {
-  width: 10rem;
+main {
+  padding-bottom: 4rem;
+}
+/*********************** color ******************************************/
+.bg-color {
+  background-color: #0d8ac4;
+}
+.bg-white-transparent {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+/*********************** links ******************************************/
+
+.nav-link {
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+  color: #000000;
+}
+.nav-link:hover, .nav-link:focus {
+  border-bottom-color: #ffc439;
+}
+.active {
+  font-weight: bold;
+  border-bottom-color: #ffc439;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+a:hover {
+  color: #000000;
+}
+.service:hover {
+  background-color: #7FFFD4;
+}
+/************************** container *****************************************/
+
+.radius {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+/************************** images *****************************************/
+
+#logo {
+  width: 50px;
+  height: 50px;
+}
+.fb-img {
+  width: 150px;
+  height: 28px;
+}
+.carousel-inner img {
+    margin: auto;
+}
+/************************** button ****************************************/
+
+.button {
+  background-color: #ffc439;
+  border: none;
+  color: #333;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+}
+.button:hover {
+  background-color: #fc3;
+  color: #000;
+}
+/*************************** flex ******************************************/
+
+.order1 {
+  order: 1;
+}
+.order2 {
+  order: 2;
+}
+.order3 {
+  order: 3;
+}
+.d-inline {
+  display: inline-block;
+}
+/*************************** lists ******************************************/
+
+ul {
+  list-style: disc;
+}
+/*************************** footer ******************************************/
+
+footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.footer-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+.footer-heading {
+  font-weight: bold;
+  font-size: 16px;
+}
+.footer-content {
+  font-size: 14px;
+}
+.copyright {
+  font-size: 12px;
 }
 
-.awards {
-  width: 10rem;
-}
-
-.candid {
-  width: 8rem; 
-  height: auto;
-}
-
-.npia {
+.footer-img {
   width: 8rem;
   height: auto;
 }
 
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
+.border-box {
+  box-sizing: border-box;
+}
+.myborder {
+  border: 5px solid #bbd6dd !important;
+  padding: 3px;
+  background-color:#0d8ac4;
+  color: #eee; 
 }
 
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
+.myborder2 {
+  background-color: #ccddee;
+  padding: .25rem;
 }
 
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 25rem;
-}
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
-}
-
-/* Centers carousel */
-.carousel-inner img {
-  margin: auto;
-}
-
-/* Customize the Google map 
--------------------------------------------------- */
-.map-iframe {
-  width:100%;
-  min-height: 25rem;
-}
-.map-container {
-  display: flex;
-  align-items: stretch;
-  max-height: 100%;
-  border:0px;
-  object-fit: cover;
-}
-
-
-/* CONTENT */
-
-.sectionMod {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.sectionMod h3 {
+.quick-link, .phone-link, .email-link, .social-link {
   font-weight: 400;
+  color: #eee;
+  text-decoration: underline;
 }
-/* rtl:begin:ignore */
-.sectionMod p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
-/* rtl:end:ignore */
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 3rem 0; /* Space out the Bootstrap <hr> more */
+.quick-link:hover, .phone-link:hover, .email-link:hover, .social-link:hover {
+  background-color: #ffc439;
+  color: #333;
+  padding: 5px 10px;
+  text-decoration: none;
 }
 
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  /* rtl:remove */
-  letter-spacing: -.05rem;
+.certificate-link:hover {
+  padding: 10px;
+  background-color: #ffc439;
+}
+
+.certificate-link {
+  width: 8rem;
+  padding: 1rem;
 }
 
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
 
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
 
-  .featurette-heading {
-    font-size: 50px;
+/*************************** media break ******************************************/
+
+@media screen and (min-width: 570px) {
+  .radius {
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
   }
 }
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
+@media screen and (max-width: 768px) {
+  .order1 {
+    order: 2;
   }
+  .order2 {
+    order: 1;
+  }
+}
+/*************************** screen readers ******************************************/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
 }
 
     /** END Custom CSS **/
   </style>
 </head>
-
-<body>
+<body class="">
   <!-- Header -->
-  <header class="container d-flex justify-content-center">  <div class="row">
-    <nav class="navbar navbar-expand-sm navbar-light">
-      <div class="container-fluid d-flex justify-content-between">
-        <a class="navbar-brand" href="#"><img src="https://nwasecondstagetransition.org/new-website-2022/assets/nwasst-logo.png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="https://nwasecondstagetransition.org/new-website-2022/about/">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://nwasecondstagetransition.org/new-website-2022/services/">Services</a>
-            </li>
-            <!-- Temporarily Removing Blog link until we are ready for creating the blog. -->
-            <!--
-            <li class="nav-item">
-              <a class="nav-link" href="https://nwasecondstagetransition.org/new-website-2022/blog/">Blog</a>
-            </li>
-            -->
-            <li class="nav-item">
-              <a class="nav-link" href="https://nwasecondstagetransition.org/new-website-2022/get-involved/">Get Involved</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Contact</a>
-              <ul class="dropdown-menu">
-                <li class="p-1">
-                  <a class="dropdown-item" href="https://nwasecondstagetransition.org/new-website-2022/contact/#">Contact Us</a>
-                </li>
-                <li class="p-1"><a class="dropdown-item" href="https://nwasecondstagetransition.org/new-website-2022/about/#about-contact">Location</a></li>
-                <li class="p-1"><a class="dropdown-item" href="https://nwasecondstagetransition.org/new-website-2022/about/#about-contact">Hours</a></li>
-                <li class="p-2">
-                  <a class="dropdown-item" href="https://www.facebook.com/NWA-Second-Stage-Transition-102534804556882">Facebook</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Sign-Up</a>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="https://nwasecondstagetransition.org/new-website-2022/sign-up/assessment/#">Assessment</a></li>
-                <li><a class="dropdown-item" href="https://nwasecondstagetransition.org/new-website-2022/sign-up/class-group/#">Class / Group</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tel:14795493737">(479) 549-3737</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
+  <div class="bg-color">
+    <header  class="navbar navbar-expand-md navbar-dark bd-navbar">
+        <nav aria-label="Main navigation" class="container-xxl flex-wrap flex-md-nowrap">
+          <a aria-label="NWASST" class="navbar-brand p-0 me-3" href="/"><img alt="logo" class="custom-media me-1" id="logo" src="/assets/nwasst-logo.png">NWA Second Stage Transition</a> <button aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#bdNavbar" data-bs-toggle="collapse" type="button"><svg class="bi" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" fill-rule="evenodd"></path></svg></button>
+          <div class="collapse navbar-collapse" id="bdNavbar">
+            <hr class="d-md-none text-white-50">
+            <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+              <li class="nav-item col-6 col-md-auto">
+                <a class="nav-link p-2 active" href="/">Home</a>
+              </li>
+              <li class="nav-item col-6 col-md-auto">
+                <a class="nav-link p-2" href="/about">About</a>
+              </li>
+              <li class="nav-item col-6 col-md-auto">
+                <a class="nav-link p-2" href="/services">Services</a>
+              </li>
+              <li class="nav-item col-6 col-md-auto">
+                <a class="nav-link p-2" href="/events">Events</a>
+              </li>
+              <li class="nav-item col-6 col-md-auto">
+                <a class="nav-link p-2" href="/donate">Donate</a>
+              </li>
+              <li class="nav-item col-6 col-md-auto">
+                <a class="nav-link p-2" href="/connect">Connect</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 </header>
+  </div>
   <!-- End Header -->
   
   <!-- breadcrumb -->
@@ -10044,7 +10116,8 @@ body {
   <!-- END breadcrumb -->
   
   <!-- Main Content -->
-  <main class="container"><!-- Donation Cancelation section -->
+  <div class="vh-100">
+    <main class="container mt-5"><!-- Donation Cancelation section -->
 <div id="ourStory" class="position-relative overflow-hidden p-3 p-md-3 m-md-3 text-center">
   <div class="col-md-6 mx-auto my-3 border border-warning border-4 rounded alert alert-warning" role="alert">
     <h1 class="display-4 pb-3 fw-normal">Your donation was canceled.</h1>
@@ -10060,47 +10133,83 @@ body {
   <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
 </div>
 <!-- END Donation Cancelation section --></main>
+  </div>
+  
   <!-- END Main Content -->
   <!-- Footer -->
-  <div class="bgc">
-    <footer class="container"><div class="row">
-  <div class="col-sm-12 col-md-3 order3 text-light py-3">
-    <img style="width:8rem" src="https://nwasecondstagetransition.org/new-website-2022//assets/nwasst-logo.png" alt="NWA Second Stage Transition Logo">
-  </div>
-  <div class="col-sm-12 col-md-3 order3 text-light py-3">
-    <div class="pb-1">
-      Office Hours By appointment<br>
-      <address>
-        <a id="phone-color" href="tel:14795493737">(479) 549-3737</a><br>
-      </address>
+  <div class="bg-color mt-auto">
+    <footer class="container"><div class="container">
+  <div class="text-light border-box">
+    <div class="row">
+      <div class="col-sm-12 col-lg-4  mx-auto">
+        <h5 class="text-center">Quick Links<span></span></h5>
+        <ul class="container list-unstyled">
+          <li class="my-3 text-center">
+            <a class="quick-link" href="#.">Get Started</a>
+          </li>
+          <li class="my-3 text-center">
+            <a class="quick-link" href="#.">Success Stories</a>
+          </li>
+          <li class="my-3 text-center">
+            <a class="quick-link" href="#.">Events</a>
+          </li>
+          <li class="my-3 text-center">
+            <a class="quick-link" href="#.">News</a>
+          </li>
+          <li class="my-3 text-center">
+            <a class="quick-link" href="#.">About</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-lg-4  mx-auto">
+        <div class="myborder2">
+          <div class="myborder">
+            <h5 class="text-center">NWA Second Stage Transition<span></span></h5>
+            <address class="text-center">
+              P.O. Box 1128, </br>Siloam Springs, Arkansas 72761
+            </address>
+          </div>
+        </div>
+        <ul class="list-unstyled">
+          <li class="">
+            <address class="text-center my-3">
+              <a class="phone-link" href="tel:14795493737">+1 479 549 3737</a>
+            </address>
+          </li>
+          <li class="">
+            <address class="text-center my-3">
+              <a class="text-center email-link" href="mailto:info@nwasecondstagetransition.org" title="email">info@nwasecondstagetransition.org</a>
+            </address>
+          </li>
+          <li class="text-center my-3">
+            <a  href="https://www.facebook.com/NWA-Second-Stage-Transition-102534804556882/" target="_blank" title="Facebook"><img class="social-link rounded-circle" alt="Facebook" width="30" height="30" src="https://nwasecondstagetransition.org/new-website-2022/assets/facebook-logo.png"></a>
+          </li>
+        </ul>
+        <p class="text-center">
+          Open by appointment only.
+        </p>
+      </div>
+      <div class="col-sm-12 col-lg-4  mx-auto">
+        <ul class="list-unstyled">
+          <li class="text-center">
+            <a class="" href="https://www.guidestar.org/profile/84-2586015">
+              <img class="certificate-link" src="https://nwasecondstagetransition.org/new-website-2022/./assets/candid-2022-silver-transparency-award.webp" alt="NWA Second Stage Transition Logo">
+            </a>
+          </li>
+          <li class="text-center">
+            <a class="" href='https://www.natpia.com/providers/910/cecelia-dorko/' target='_blank'>
+              <img class="certificate-link rounded-circle" src='https://storage.googleapis.com/parenting-org-static/img/natpia-badge-160.png'/>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <address>
-      P.O. Box 1128<br>
-      Siloam Springs, AR 72761<br>
-    </address>
   </div>
-  <div class="col-sm-12 col-md-3 order3 text-light py-3">
-    <ul class="nav  list-unstyled justify-content-end">
-      <li class="ms-3">
-        <a class="text-muted" href="https://www.facebook.com/NWA-Second-Stage-Transition-102534804556882">
-          <img style="width:8rem" src="https://nwasecondstagetransition.org/new-website-2022//assets/find-NWASST-on-facebook.png" alt="Link to NWA Second Stage Transition on Facebook">
-        </a>
-      </li>
-      <li class="ms-3">
-        <a class="text-muted" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="auto" fill="currentColor" class="bi bi-paypal" viewBox="0 0 16 16">
-              <path d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.351.351 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91.379-.27.712-.603.993-1.005a4.942 4.942 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.687 2.687 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.695.695 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016c.217.124.4.27.548.438.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.873.873 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.352.352 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32.845-5.214Z"/>
-            </svg>
-          </a>
-      </li>
-      <li class="ms-3">
-        <div class="w-100">
-          <a class="btn btn-sm btn-outline-light" href="#">Back to Top</a>
-        </div>  
-      </li>
-    </ul>
+  <div class="row">
+    <p class="text-light text-center pt-5">Copyright NWA Second Stage Transition © 2022. All rights reserved.</p>
   </div>
-</div></footer>
+</div>
+</footer>
   </div>
   <!-- END Footer -->
   <!-- Scripts -->
