@@ -82,8 +82,8 @@ a:hover {
 /************************** images *****************************************/
 
 #logo {
-  width: 50px;
-  height: 50px;
+  width: 6rem;
+  height: auto;
 }
 .fb-img {
   width: 150px;
@@ -184,14 +184,25 @@ footer {
   text-decoration: none;
 }
 
-.certificate-link:hover, .social-link:hover {
+.certificate-link:hover {
   padding: 10px;
   background-color: #ffc439;
 }
 
-.certificate-link, .social-link {
+.certificate-link {
   width: 8rem;
   padding: 1rem;
+}
+
+.social-link {
+  width: 3rem;
+  padding: 0.5rem;
+  visibility:visible;
+}
+
+.social-link:hover {
+  padding: 8px;
+  background-color: #ffc439;
 }
 
 
