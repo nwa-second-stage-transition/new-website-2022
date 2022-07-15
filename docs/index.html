@@ -9846,9 +9846,34 @@ html, body {
   width: 100%;
 }
 
-/************************* carousel ***********************************/
+/** carousel **/
 
-var carousel-office=document.querySelector('#carousel-office') var carousel=new bootstrap.Carousel(carousel-office)
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 25rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+/* Centers carousel */
+.carousel-inner img {
+  margin: auto;
+}
+
 /************************* backgrounds ***********************************/
 
 .default {

@@ -9845,9 +9845,34 @@ html, body {
   width: 100%;
 }
 
-/************************* carousel ***********************************/
+/** carousel **/
 
-var carousel-office=document.querySelector('#carousel-office') var carousel=new bootstrap.Carousel(carousel-office)
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 25rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+/* Centers carousel */
+.carousel-inner img {
+  margin: auto;
+}
+
 /************************* backgrounds ***********************************/
 
 .default {
@@ -10133,7 +10158,7 @@ footer {
   <!-- END breadcrumb -->
   
   <!-- Main Content -->
-  <main class="container mt-5"><!-- icons -->
+  <main class="mt-5"><!-- icons -->
 <symbol id="chevron-right" viewBox="0 0 16 16">
   <path fill-rule="evenodd"
     d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
@@ -10148,8 +10173,7 @@ footer {
 </div></main>
   <!-- END Main Content -->
   <!-- Footer -->
-  <div class="bg-color mt-auto">
-    <footer class="container"><div class="container">
+  <footer class="bg-color"><div class="container">
   <div class="text-light border-box">
     <div class="row">
       <div class="col-sm-12 col-lg-4  mx-auto order1">
@@ -10215,7 +10239,6 @@ footer {
   </div>
 </div>
 </footer>
-  </div>
   <!-- END Footer -->
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
