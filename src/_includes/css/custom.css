@@ -137,6 +137,11 @@ a:hover {
   background-color: #fc3;
   color: #000;
 }
+
+.accordion-bttn {
+  font-size: 2rem !important;
+}
+
 /*************************** flex ******************************************/
 
 .order1 {
