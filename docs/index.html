@@ -9927,7 +9927,7 @@ main {
   border-bottom-color: #ffc439;
 }
 .active {
-  font-weight: bold;
+  font-weight: 400;
   border-bottom-color: #ffc439;
 }
 a {
@@ -9940,6 +9940,15 @@ a:hover {
 .service:hover {
   background-color: #7FFFD4;
 }
+.breadcrumb-link {
+  text-decoration: underline;
+}
+
+.breadcrumb-link:hover {
+  font-weight: bolder;
+}
+
+
 /************************** container *****************************************/
 
 .radius {
@@ -10084,12 +10093,17 @@ footer {
 /*************************** media break ******************************************/
 
 @media screen and (min-width: 570px) {
+  #logo {
+    width: 10rem;
+  }
+
   .radius {
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
     border-radius: 15px;
   }
 }
+
 @media screen and (max-width: 992px) {
   .order1 {
     order: 2;
