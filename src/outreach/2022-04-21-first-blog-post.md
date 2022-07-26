@@ -2,7 +2,7 @@
 title: First Blog Post
 publishDate: 2022-04-21
 templateEngineOverride: njk,md
-description: Baseball Gane
+description: Baseball Game
 author: Cecelia
 date: 2022-07-26T23:05:33.059Z
 tags:
