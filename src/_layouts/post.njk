@@ -1,0 +1,18 @@
+---
+layout: base.njk
+---
+
+<article>
+    <div class="container">
+        <h1 class="post-title">
+            {{ title }}
+        </h1>
+        <figure class="post__figure">
+            <img src="{{ image }}" alt="{{ imageAlt}}">
+            <figcaption>
+                {{ imageALt}}
+            </figcaption>
+        </figure>
+        {{ content | safe }}
+    </div>
+</article>

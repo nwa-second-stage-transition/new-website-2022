@@ -1,6 +1,5 @@
 ---
-layout: base-layout.njk
-title: "NWA Second Stage Transition's a place for you when you need help the most."
+layout: base.njk
 ---
 <!-- START of the Blog section -->
 <div id="ourStory" class="position-relative overflow-hidden p-3 p-md-3 m-md-3 text-center">
@@ -8,8 +7,6 @@ title: "NWA Second Stage Transition's a place for you when you need help the mos
     <h1 class="display-4 pb-3 fw-normal">Community Outreach</h1>
     <p class="lead fw-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab fugit, excepturi obcaecati sed, quasi officiis quis quod magni ut placeat a voluptatum debitis porro dolores.</p>
   </div>
-  <div class="product-device shadow-sm d-none d-md-block"></div>
-  <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
 </div>
 <!-- END Blog section -->
 <hr class="featurette-divider">
@@ -24,9 +21,10 @@ title: "NWA Second Stage Transition's a place for you when you need help the mos
       <article>
         <img src="{{ post.data.image }}" alt="{{post.data.imageAlt}}">
         <h1>
-      <a class="" href="{{ post.url | url }}">{{ post.data.title }}</a>
-    </h1>
-        {{ post.data.publishDate | postDate }}
+          <a class="" href="{{ post.url | url }}">{{ post.data.title }}</a>
+        </h1>
+        <p>{{ post.data.publishDate | postDate }}</p>
+        <p></p>
       </article>
       {% endfor %}
     </div><!-- /.col-lg-12 -->

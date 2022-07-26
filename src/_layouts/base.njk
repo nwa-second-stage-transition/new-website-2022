@@ -22,7 +22,11 @@
   {% if page.fileSlug != "" %}
   <!-- breadcrumb -->
   <nav aria-label="breadcrumb" class="container">
-    {% include '../_includes/base-breadcrumb.html' %}
+    {% if '/outreach' in page.url %}
+      {% include '../_includes/post-bc.html' %}
+    {% else %}
+      {% include '../_includes/base-bc.html' %}    
+    {% endif %}
   </nav>
   <!-- END breadcrumb -->
   {% endif %}
