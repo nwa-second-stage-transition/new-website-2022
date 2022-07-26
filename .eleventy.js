@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget("./src/css/");
     eleventyConfig.addPassthroughCopy({ "src/_assets": "assets" });
     eleventyConfig.addPassthroughCopy("./src/robot.txt");
+    eleventyConfig.addPassthroughCopy("./src/admin/config.yml");
     eleventyConfig.addPassthroughCopy("./src/sitemap.xsl");
     
     eleventyConfig.addFilter("unSlugify", (str) => {
